@@ -8,7 +8,7 @@
 @media only screen and (min-width: 0em) {
     // Website colors
     :root {
-        --primary: #ffba19;
+        --primary: #71C19D;
         --primaryLight: #ffd675;
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
@@ -63,7 +63,7 @@
     // Button - can be replaced using CodeStitch's "Button" Stitches
     .cs-button-solid {
         font-size: calc(16 / 16 * 1rem);
-        font-weight: bold;
+        font-weight: normal;
         line-height: calc(50 / 16 * 1em);
         text-align: center;
         text-transform: uppercase;
@@ -71,13 +71,14 @@
         width: auto;
         padding: 0 calc(30 / 16 * 1rem);
         // Transition Properties
-        color: #000;
+        color: #FFF;
         background-color: var(--primary);
         display: inline-block;
         position: relative;
         z-index: 1;
         transition: color 0.3s;
         transition-delay: 0.1s;
+        border-radius: 6px;
 
         &:hover {
             color: #fff;
