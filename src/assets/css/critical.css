@@ -211,9 +211,9 @@
     margin-top: -10.4375em;
     margin-bottom: 3.125em;
     padding: 3.125em 1.25em;
-    background: #fff;
+    background: #EFFEE7;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-    border-top: 0.375em solid var(--primary);
+    border-top: 0.375em solid #C4A34E;
     border-radius: 0.3125em;
     position: relative;
     z-index: 100;
@@ -233,7 +233,7 @@
     height: 5.5em;
     margin: auto;
     margin-bottom: 1.4375em;
-    background: var(--primary);
+    background: #EFFEE7;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -284,10 +284,10 @@
 /* Dark mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #services {
-    background: var(--medium);
+    background: #EFFEE7;
   }
   body.dark-mode #services picture {
-    background: var(--primaryDark);
+    background: #EFFEE7;
   }
   body.dark-mode #services h2 {
     font-weight: bold;
