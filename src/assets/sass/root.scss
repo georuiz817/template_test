@@ -939,6 +939,7 @@
         #cs-navigation {
             background-color: var(--dark);
 
+
             .cs-li-link {
                 color: var(--bodyTextColorWhite);
             }
@@ -1134,7 +1135,6 @@
             content: "";
             width: calc(2000 / 16 * 1rem);
             height: calc(1108 / 16 * 1rem);
-            background: url("/assets/svgs/cta-squares.svg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
