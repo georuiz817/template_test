@@ -86,7 +86,7 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
-    border-radius: 6px;
+    border-radius: 0.7;
   }
 }
 /* Fonts and general styles */
@@ -486,9 +486,6 @@
   body.dark-mode #cs-navigation {
     background-color: var(--dark);
   }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-  }
   body.dark-mode #cs-navigation .cs-line {
     background-color: #fff;
   }
@@ -781,9 +778,6 @@
 @media only screen and (min-width: 64rem) {
   body.dark-mode #cs-navigation {
     background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it turn white */
   }
   body.dark-mode #cs-navigation .cs-li-link {
     color: var(--bodyTextColorWhite);

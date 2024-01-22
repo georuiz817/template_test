@@ -101,7 +101,7 @@
             left: 0;
             z-index: -1;
             transition: width 0.3s;
-            border-radius: 6px;
+            border-radius: 0.7;
         }
     }
 }
@@ -585,11 +585,6 @@
         #cs-navigation {
             background-color: var(--dark);
 
-            .cs-logo {
-                /* makes it white */
-       
-            }
-
             .cs-line {
                 background-color: #fff;
             }
@@ -944,11 +939,6 @@
         #cs-navigation {
             background-color: var(--dark);
 
-            .cs-logo {
-                /* makes it turn white */
-                
-            }
-
             .cs-li-link {
                 color: var(--bodyTextColorWhite);
             }
@@ -1090,6 +1080,7 @@
             top: 0;
             left: 0;
             z-index: -2;
+           
 
             img {
                 width: 100%;
@@ -1098,6 +1089,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                
             }
         }
 

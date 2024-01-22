@@ -292,17 +292,18 @@
             }
             h2 {
                 font-size: calc(32 / 16 * 1em);
-                font-weight: 700;
+                font-weight: normal;
                 line-height: calc(27 / 20 * 1em);
                 text-align: center;
                 margin-bottom: calc(13 / 20 * 1em);
-                color: #1a1a1a;
+                color: #000;
             }
             p {
                 line-height: calc(24 / 18 * 1em);
                 text-align: center;
                 width: 100%;
                 opacity: 0.7;
+                color: #000;
             }
         }
     }
@@ -346,8 +347,11 @@
             }
 
             h2 {
-                font-weight: bold;
-                color: black;
+                font-weight: normal;
+                color: #000;
+            }
+            p {
+                color:  #000;
             }
         }
     }
