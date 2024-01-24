@@ -1192,7 +1192,7 @@
     #footer {
         font-size: min(4vw, 1.2em);
         padding: calc(84 / 16 * 1rem) 0 calc(20 / 16 * 1rem);
-        background: #1c1c1c;
+        background: #1B2317;
 
         .left-section {
             text-align: center;
@@ -1285,7 +1285,6 @@
                             content: "";
                             width: calc(97 / 16 * 1rem);
                             height: calc(2 / 16 * 1rem);
-                            background: var(--primary);
                             opacity: 1;
                             display: block;
                             position: absolute;
@@ -1431,7 +1430,7 @@
 @media only screen and (min-width: 0em) {
     body.dark-mode {
         #footer {
-            background: #061623;
+            background: #1B2317;
         }
     }
 }
