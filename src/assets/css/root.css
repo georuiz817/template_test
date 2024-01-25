@@ -964,9 +964,11 @@
     margin: auto;
   }
   #cta picture {
-    width: 90.0625%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    /* Set to 100% for full width */
+    /* Remove left positioning adjustments */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
   }
   #cta picture:before {
     content: "";
@@ -1069,7 +1071,7 @@
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
+    color: var(--bodyTextColorWhite);
   }
   #footer .right-section .lists ul h2 {
     font-size: 1.125rem;
@@ -1175,7 +1177,7 @@
     content: "";
     width: 0%;
     height: 0.125rem;
-    background: var(--primary);
+    background: var(--bodyTextColorWhite);
     opacity: 1;
     display: block;
     position: absolute;

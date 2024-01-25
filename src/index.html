@@ -4,120 +4,105 @@ description: 'Meta description for the page'
 preloadImg: '/assets/images/magical.png'
 permalink: '/'
 eleventyNavigation:
-  key: Home
-  order: 100
+key: Home
+order: 100
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
 
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
+<!-- Script for Netlify Identity -->
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer>
+    if (window.netlifyIdentity) {
+        window
+            .netlifyIdentity
+            .on('init', (user) => {
+                if (!user) {
+                    window
+                        .netlifyIdentity
+                        .on('login', () => {
+                            document.location.href = '/admin/';
+                        });
+                }
+            });
+    }
+</script>
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <h1 class="cs-title">Elevate your business with a custom website</h1>
-                <p class="cs-text">
-                    Relax, we've got your online presence covered so you can focus on your craft. 
-                </p>
-                <a href="/about" class="cs-button-solid">Contact Us</a>
-            </div>
+<section id="hero">
+    <div class="cs-container">
+        <div class="cs-flex-group">
+            <h1 class="cs-title">Elevate your business with a custom website</h1>
+            <p class="cs-text">
+                Relax, we've got your online presence covered so you can focus on your craft.
+            </p>
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
         </div>
+    </div>
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/magical.png">
-            <source media="(min-width: 601px)" srcset="/assets/images/magical.png">
-            <img aria-hidden="true" decoding="async" src="/assets/images/magical.png" alt="new home" width="2500" height="1667" loading="eager">
+    <!-- Background Image -->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="/assets/images/magical.png">
+        <source media="(min-width: 601px)" srcset="/assets/images/magical.png">
+        <img aria-hidden="true" decoding="async" src="/assets/images/magical.png" alt="new home" width="2500"
+            height="1667" loading="eager">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services" class="services">
+    <!-- Get Icons From flaticon.com -->
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/svgs/smartphone.svg" alt="appliance" width="48"
+                height="48" />
         </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
-
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/smartphone.svg"
-                alt="appliance"
-                width="48"
+        <h2>Responsive Sites</h2>
+        <p>Websites that look great on any device and screen size</p>
+    </div>
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/svgs/search.svg" alt="appliance" width="48"
                 height="48" />
-            </picture>
-            <h2>Responsive Sites</h2>
-            <p>Websites that look great on any device and screen size</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/search.svg"
-                alt="appliance"
-                width="48"
+        </picture>
+        <h2>SEO Optimization</h2>
+        <p>Strategies to improve your site's search engine ranking</p>
+    </div>
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/svgs/pen-tool.svg" alt="appliance" width="48"
                 height="48" />
-            </picture>
-            <h2>SEO Optimization</h2>
-            <p>Strategies to improve your site's search engine ranking</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/pen-tool.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Design and Branding </h2>
-            <p>Make a lasting impression with beautiful visuals</p>
-        </div>
-    </section>
+        </picture>
+        <h2>Design and Branding </h2>
+        <p>Make a lasting impression with beautiful visuals</p>
+    </div>
+</section>
 
 
 
-    <!-- ============================================ -->
-    <!--                 Projects                -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Projects                -->
+<!-- ============================================ -->
+
+ 
 
 
 
-    
 
+<!-- ====================END BUMPER======================== -->
 
-    
-    <!-- ====================END BUMPER======================== -->
-
-    {% include 'components/cta.html' %}
+{% include 'components/cta.html' %}
 {% endblock %}
