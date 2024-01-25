@@ -873,6 +873,31 @@
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
+.projectsSection h2 {
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.35em;
+  text-align: center;
+  margin-bottom: 0.65em;
+  color: #000;
+}
+
+.homeProjects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homeProjectsCol {
+  flex: 1;
+  padding: 20px;
+  text-align: center; /* Center the text within the columns */
+}
+
+@media screen and (max-width: 64em) {
+  .homeProjectsCol {
+    flex: 100%; /* Full width for each column on small screens */
+  }
+}
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #cta {
