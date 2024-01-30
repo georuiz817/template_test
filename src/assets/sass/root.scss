@@ -4,7 +4,11 @@
 <---        Core Styles         -->
 <--- -------------------------- -*/
 
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 /* CodeStitch Root and Helpers */
+
 @media only screen and (min-width: 0em) {
     // Website colors
     :root {
@@ -51,6 +55,7 @@
     }
 
     .cs-text {
+        font-family: 'Nunito', sans-serif;
         font-size: var(--bodyFontSize);
         line-height: 1.5em;
         text-align: inherit;
@@ -110,44 +115,11 @@
 @media only screen and (min-width: 0em) {
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
-    /* roboto-regular - latin */
-    @font-face {
-        font-style: normal;
-        font-family: "Josefin Sans";
-        font-weight: 400;
-        font-display: swap;
-        src: local(""),
-            url("/assets/fonts/joesefinFont/JosefinSans-Regular.ttf") format("ttf"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/joesefinFont/JosefinSans-Regular.ttf")
-                format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
-    /* roboto-700 - latin */
-    @font-face {
-        font-style: normal;
-        font-family: "Josefin Sans";
-        font-weight: 700;
-        font-display: swap;
-        src: local(""),
-            url("/assets/fonts/joesefinFont/JosefinSans-SemiBold.ttf") format("ttf"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/joesefinFont/JosefinSans-SemiBold.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
-    /* roboto-900 - latin */
-    @font-face {
-        font-style: normal;
-        font-family: "Josefin Sans";
-        font-weight: 900;
-        font-display: swap;
-        src: local(""),
-            url("/assets/fonts/joesefinFont/JosefinSans-Bold.ttf") format("ttf"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/joesefinFont/JosefinSans-Bold.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+
 
     body,
     html {
-        font-family: 'Josefin Sans', 'Roboto', Arial, sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         font-size: 100%;
         margin: 0;
         padding: 0;
@@ -323,7 +295,7 @@
 
     #cs-navigation {
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: 'Josefin Sans', 'Roboto', Arial, sans-serif;
+        font-family: 'Nunito', sans-serif;
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
@@ -833,7 +805,7 @@
 @media only screen and (min-width: 64rem) {
     #cs-navigation {
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: 'Josefin Sans', 'Roboto', Arial, sans-serif;
+        font-family: 'Nunito', sans-serif;
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
