@@ -55,6 +55,7 @@
     color: var(--bodyTextColor);
   }
   .cs-button-solid {
+    font-family: "Nunito", sans-serif;
     font-size: 1rem;
     font-weight: normal;
     line-height: 3.125em;
