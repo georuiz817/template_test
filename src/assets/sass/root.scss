@@ -113,41 +113,41 @@
     /* roboto-regular - latin */
     @font-face {
         font-style: normal;
-        font-family: "Roboto";
+        font-family: "Josefin Sans";
         font-weight: 400;
         font-display: swap;
         src: local(""),
-            url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+            url("/assets/fonts/joesefinFont/JosefinSans-Regular.ttf") format("ttf"),
             /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/roboto-v29-latin-regular.woff")
-                format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url("/assets/fonts/joesefinFont/JosefinSans-Regular.ttf")
+                format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
     /* roboto-700 - latin */
     @font-face {
         font-style: normal;
-        font-family: "Roboto";
+        font-family: "Josefin Sans";
         font-weight: 700;
         font-display: swap;
         src: local(""),
-            url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
+            url("/assets/fonts/joesefinFont/JosefinSans-SemiBold.ttf") format("ttf"),
             /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url("/assets/fonts/joesefinFont/JosefinSans-SemiBold.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
     /* roboto-900 - latin */
     @font-face {
         font-style: normal;
-        font-family: "Roboto";
+        font-family: "Josefin Sans";
         font-weight: 900;
         font-display: swap;
         src: local(""),
-            url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
+            url("/assets/fonts/joesefinFont/JosefinSans-Bold.ttf") format("ttf"),
             /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url("/assets/fonts/joesefinFont/JosefinSans-Bold.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
     body,
     html {
-        font-family: "Roboto", Arial, sans-serif;
+        font-family: 'Josefin Sans', 'Roboto', Arial, sans-serif;
         font-size: 100%;
         margin: 0;
         padding: 0;
@@ -323,7 +323,7 @@
 
     #cs-navigation {
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "Roboto", "Arial", sans-serif;
+        font-family: 'Josefin Sans', 'Roboto', Arial, sans-serif;
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
@@ -833,7 +833,7 @@
 @media only screen and (min-width: 64rem) {
     #cs-navigation {
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "Roboto", "Arial", sans-serif;
+        font-family: 'Josefin Sans', 'Roboto', Arial, sans-serif;
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
